@@ -1,3 +1,24 @@
 .sidebar {
     background-color: $dark--bg;
+    &__header {
+        padding: 37px 32px 60px 32px;
+        box-sizing: border-box;
+        color: $text--gray;
+        display: flex;
+        align-items: center;
+        h2{
+            margin: 0;
+        }
+        &--logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: $color--blue;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
