@@ -1,0 +1,11 @@
+$dark--bg: #363740;
+$light--bg: #F7F8FC;
+
+body {
+    margin: 20;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}

@@ -14,5 +14,8 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-rigger": "^0.5.8",
     "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "rigger": "^1.0.1"
   }
 }
