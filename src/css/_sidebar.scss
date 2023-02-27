@@ -1,7 +1,7 @@
 .sidebar {
     background-color: $dark--bg;
     &__header {
-        padding: 37px 32px 60px 32px;
+        padding: 30px 32px 60px 25px;
         box-sizing: border-box;
         color: $text--gray;
         display: flex;
@@ -16,9 +16,46 @@
             width: 32px;
             height: 32px;
             background: $color--blue;
+            border-radius: 50%;
+            min-width: 32px;
+            margin-right: 10px;
             img {
-                width: 100%;
+                width: 70%;
             }
+        }
+    }
+}
+
+.menu__link {
+    border: none;
+    width: 100%;
+    padding: 20px 29px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    transition: 0.2s;
+    &:focus {
+        color: $text--gray;
+    }
+    &--active, &:hover {
+        background: $btn--hover;
+        border-left-color: $color--active;
+        color: $color--active;
+        svg {
+            path {
+                fill: $color--active;
+            }
+        }
+    }
+    svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        path {
+            fill: $text--gray;
         }
     }
 }
